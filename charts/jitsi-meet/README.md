@@ -60,8 +60,8 @@ The following table lists the configurable parameters of the Jitsi Meet chart an
 |---------------------------------------------------------|----------------------------------------|-----------------|
 | `image.pullSecrets`                                     | Image pull secrets                     | `nil`           |
 | `jicofo.image.repository`                               | Image repository                       | `jitsi/jicofo`  |
-| `jicofo.image.tag`                                      | Image tag                              | `latest`        |
-| `jicofo.image.pullPolicy`                               | Image pull policy                      | `Always`        |
+| `jicofo.image.tag`                                      | Image tag                              | `stable-4857`        |
+| `jicofo.image.pullPolicy`                               | Image pull policy                      | `IfNotPresent`        |
 | `jicofo.environment`                                    | Additional environment variables       | `[]`            |
 | `jicofo.componentSecret`                                | Base64 encoded component secret        | `nil`           |
 | `jicofo.userAuth.enabled`                               | Enabled authentication                 | `false`         |
@@ -69,8 +69,8 @@ The following table lists the configurable parameters of the Jitsi Meet chart an
 | `jicofo.userAuth.secret`                                | Secret for authentication              | `nil`           |
 | `jicofo.resources`                                      | Pod resources                          | `{}`            |
 | `jvb.image.repository`                                  | Image repository                       | `jitsi/jvb`     |
-| `jvb.image.tag`                                         | Image tag                              | `latest`        |
-| `jvb.image.pullPolicy`                                  | Image pull policy                      | `Always`        |
+| `jvb.image.tag`                                         | Image tag                              | `stable-4857`        |
+| `jvb.image.pullPolicy`                                  | Image pull policy                      | `IfNotPresent`        |
 | `jvb.replicaCount`                                      | Replica count                          | `1`             |
 | `jvb.environment`                                       | Additional environment variables       | `[]`            |
 | `jvb.securityContext.fsGroup`                           | Security context deployment            | `412`           |
@@ -86,8 +86,8 @@ The following table lists the configurable parameters of the Jitsi Meet chart an
 | `jvb.userAuth.name`                                     | Username for authentication            | `focus`         |
 | `jvb.userAuth.secret`                                   | Secret for authentication              | `nil`           |
 | `prosody.image.repository`                              | Image repository                       | `jitsi/prosody` |
-| `prosody.image.tag`                                     | Image tag                              | `latest`        |
-| `prosody.image.pullPolicy`                              | Image pull policy                      | `Always`        |
+| `prosody.image.tag`                                     | Image tag                              | `stable-4857`        |
+| `prosody.image.pullPolicy`                              | Image pull policy                      | `IfNotPresent`        |
 | `prosody.environment`                                   | Additional environment variables       | `[]`            |
 | `prosody.replicaCount`                                  | Replica count                          | `1`             |
 | `prosody.service.annotations`                           | Service annotations                    | `[]`            |
@@ -99,8 +99,8 @@ The following table lists the configurable parameters of the Jitsi Meet chart an
 | `prosody.affinity`                                      | Node affinity                          | `{}`            |
 | `web.tolerations`                                       | Node tolerations                       | `{}`            |
 | `web.image.repository`                                  | Image repository                       | `jitsi/prosody` |
-| `web.image.tag`                                         | Image tag                              | `latest`        |
-| `web.image.pullPolicy`                                  | Image pull policy                      | `Always`        |
+| `web.image.tag`                                         | Image tag                              | `stable-4857`        |
+| `web.image.pullPolicy`                                  | Image pull policy                      | `IfNotPresent`        |
 | `web.environment`                                       | Additional environment variables       | `[]`            |
 | `web.replicaCount`                                      | Replica count                          | `1`             |
 | `web.hpa.enabled`                                       | Yet to come, horizontal pod autoscaler | `false`         |
